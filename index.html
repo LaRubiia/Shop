@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ЕдаМаркет</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/itc-slider.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+    
+    <header class="header">
+    <div class="conteiner conteiner__header" >
+        <h4 class="header__text">ЕдаМаркет
+            </h4>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        Рекомендации
+                    </li>
+                        <li class="nav__item">
+                                Главное
+                        </li>
+                        <li class="nav__item">
+                            Товары
+                        </li>
+                        <li class="nav__item">
+                            Акции
+                        </li>
+                    </ul>
+                    <div class="burger"onclick="burgerClick()">
+                        <div class="burger__line burger__line_1">
+                        </div>
+                        <div class="burger__line burger__line_2">
+                        </div>
+                        <div class="burger__line burger__line_3">
+                        </div>
+                        </div>
+
+                </nav>
+        <button class="btn__menu" id="btn-menu">Меню</button>
+        <div class="header__menu" id="menu">
+            <ul class="menu__list">
+                <li class="menu__item">
+                    <a href="#" class="menu__link">
+                    Товары
+                    </a>
+                </li>   
+                <li class="menu__item">
+                    <a href="#" class="menu__link">
+                    Акции
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link">
+                    Рекомендуем
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link">
+                    Недавно заказывали
+                    </a>
+                </li> 
+                
+                <li class="menu__item">
+                    <div class="theme">
+                        <h4 class="theme__text">
+                            Смена темы
+                        </h4>
+                        <ul class="theme__list">
+                            <li class="theme__item">
+                                <div class="theme__light"onclick=choiseWhite()>
+                                    
+                                </div>    
+                            </li> 
+                            <li class="theme__item">
+                                <div class="theme__dark"onclick=choiseDark()>
+
+                                </div>    
+                            </li>
+                        </ul>
+                    </div>
+                </li> 
+
+            </ul>    
+        </div>
+    </div>
+    
+    </header>
+    <main class="main">
+        <section class="card">
+            <div class="conteiner">
+                <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                      <a href="#" class="btn btn-primary">Button</a>
+                    </div>
+                  </div>
+                </div>
+            
+            </section>
+        <section class="shop">
+        <div class="conteiner">
+            <h2 class="shop__title">
+                Молоко
+            </h2>
+            <img src="img/Foto-3D-14.png" class="shop__img">
+            <h3 class="shop__title">
+                Описание
+            </h3>
+            <p class="shop__text">
+                ценный пищевой продукт, содержащий более 100 питательных веществ, включая белки, жир, молочный сахар, минеральные вещества, фосфолипиды, органические кислоты, витамины, ферменты
+            </p>
+            <h3 class="shop__title">
+                Цена
+            </h3>
+            <p class="shop__price">
+                125р
+            </p>
+            <button class="shop__btn" id="btn" onclick="buy()">
+                Купить
+            </button>    
+        </div>
+        </section>
+        <section class="slide">
+            <div class="conteiner conteiner__slider">
+                <h3 class="slide__title">
+                    Фото
+                </h3>    
+                <div class="itc-slider" data-slider="itc-slider">
+                    <div class="itc-slider-wrapper">
+                      <div class="itc-slider-items">
+                        <div class="itc-slider-item">
+                          <img class="slider__img" src="img/Foto-3D-14.png">
+                        </div>
+                        <div class="itc-slider-item">
+                          <img class="slider__img" src="img/c4ebaf05bdbf07e5def9e74c320acccb.jpg">
+                        </div>
+                        <div class="itc-slider-item">
+                          <img class="slider__img" src="img/coconut.jpg">
+                        </div>
+            
+                      </div>
+                    </div>
+                    <!-- Кнопки для перехода к предыдущему и следующему слайду -->
+                    <button class="itc-slider-btn itc-slider-btn-prev"></button>
+                    <button class="itc-slider-btn itc-slider-btn-next"></button>
+                  </div>
+            </div>
+        </section>   
+        <section class="video"> 
+            <video id="myVideo"autoplay muted loop>
+            <source src="/video/Video1.mp4">
+            </video>
+            <div class="video__content">
+                <div class="video__info">
+                <h3 class="video__name">
+                     Как производится молоко
+                     
+                    </h3>
+                    
+                    <p class="video__text">
+                        Как производят молоко , все о молоке
+                        </p>
+                        </div>
+                        <button class="video__button"id="play" onclick="play()">
+                            pause
+                            </button>
+                            <button class="video__button"id="mute" onclick="mute()">
+                                mute
+                            </button>
+                            <button  class="video__button"onclick="next()">
+                                <
+                                </button>
+                                <button  class="video__button"onclick="prev()">
+                                    >
+                                    </button>
+                </div>
+            </section> 
+    </main>
+    <footer class="footer">
+    <div class=" conteiner">
+    <p class="footer__text">
+        Глеб Могин | 2024 
+    </p>
+    </div>    
+    </footer>
+    <script src="js/button.js" >
+    </script>
+    <script src="js/itc-slider.js">
+    </script>
+    <script src="js/menu.js">
+    </script>
+    <script src="js/burger.js">
+    </script>
+    <script src="js/theme.js" ></script>
+    <script src="js/video.js">
+    </script>
+    <script src="js/bootstrap.js">
+    </script>
+</body>
+</html>
